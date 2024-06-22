@@ -1,0 +1,101 @@
+<html>
+    <head> 
+        <title>Listing Exercise</title>
+    </head>
+    <link rel="icon" type="image/png" href="image/Basic_Elements__28120_29.jpg">
+    <body>
+        <h1> Types of HTML lists</h1>
+
+        <p> 
+            <h2>Unordered List</h2>
+
+            <ul> 
+                <li>First Text</li>
+                <li>Second Text</li>
+                <li>Third Text</li>
+            </ul>
+
+            <ul type="disc"> 
+                <li>Anymore</li>
+                <li>Bangle</li>
+            </ul>
+
+            <ul type="circle"> 
+                <li>Air</li>
+                <li>Balloons</li>
+                <li>Cheers</li>
+            </ul>
+
+            <ul type="square">
+                <li>Apple</li>
+                <li>Birthday</li>
+            </ul>
+        </p>
+
+        <h2> Ordered List</h2>
+
+        <p> 
+            <ol type="1"> 
+                <li>Aqua</li>
+                <li>Brown</li>
+            </ol>
+
+            <ol type="A">
+                <li>Apple</li>
+                <li>Bicycle</li>
+                <li>Car</li>
+                <li>Dream</li>
+
+            </ol>
+        </p>
+
+        <h2>Changing value for ordered list</h2>
+
+        <p> 
+            <ol type="1" start="3"> 
+                <li>Apple</li>
+                <li>Bicycle</li>
+                <li>Car</li>
+                <li>Dream</li>
+            
+            </ol>
+
+            <ol> 
+                <li value="5">HTML</li>
+                <li value="6">VEB</li>
+
+            </ol>
+
+        </p>
+        
+    </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Markers</title>
+        <style>
+            ul.custom-markers {
+                list-style: none; /* Remove default bullets */
+                padding: 0;
+            }
+    
+            ul.custom-markers li {
+                background-image: url('image/blue_bullet.png');
+                background-size: 10px 10px; /* Adjust size of the bullet */
+                background-repeat: no-repeat;
+                padding-left: 20px; /* Space for the custom bullet */
+                background-position: 0 50%; /* Center vertically */
+                line-height: 1.5em; /* Adjust line height if needed */
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h2>Custom Markers</h2>
+        <ul class="custom-markers"> 
+            <li>First Love</li>
+            <li>Second Choice</li>
+        </ul>
+    
+    </body>
+</html>
